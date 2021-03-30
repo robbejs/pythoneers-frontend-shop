@@ -1,27 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <NavBar />
+  <MainBody />
+  <Footer />
+  <Toast position="bottom-right" />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import { defineComponent } from "vue";
+
+// Our components
+import NavBar from "@/components/layout/NavBar.vue";
+import Footer from "@/components/layout/Footer.vue";
+import MainBody from "@/components/layout/MainBody.vue";
+
+// Lib components
+import Toast from "primevue/toast";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
+    Toast,
+    NavBar,
+    Footer,
+    MainBody,
+  },
 });
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

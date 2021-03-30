@@ -1,0 +1,24 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--surface-a);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.back-dark {
+  background-color: var(--surface-b) !important;
+}
+
+.footer {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.test {
+  background-color: var(--surface-0) !important;
+}
